@@ -23,4 +23,6 @@ kubectl delete po trail1
 * to login into PODs below commands need to understand
 kubectl exec -it trail2 -- pwd
 kubectl exec -it trail2 -- /bin/sh
+
+kubectl exec -it trail3 -- mysql -u nop -p
 --
