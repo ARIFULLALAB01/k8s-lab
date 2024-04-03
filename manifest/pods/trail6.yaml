@@ -1,9 +1,10 @@
-#create 2 more init container and lets chech the functionlity
+#create 2 more init container and lets chech the functionlity and we have set the limits 
+#but resouce crush we have deleted the limits and resouces
 ---
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: trail5
+  name: trail6
 spec:
   restartPolicy: OnFailure
   initContainers: 
@@ -25,16 +26,9 @@ spec:
   containers: 
     - name: nginx
       image: nginx
-      resources:
-        limits: 
-          cpu: 1000m
-          memory: 0.5Gi
     - name: sidecar1
       image: alpine
       args:
         - sleep
         - 1d
-      resources:
-        limits:
-          cpu: 1000m
-          memory: 0.5Gi
+  
