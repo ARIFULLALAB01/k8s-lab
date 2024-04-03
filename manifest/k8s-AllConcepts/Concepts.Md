@@ -26,3 +26,4 @@ kubectl exec -it trail2 -- /bin/sh
 
 kubectl exec -it trail3 -- mysql -u nop -p
 --
+
