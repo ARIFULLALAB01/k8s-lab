@@ -1,3 +1,4 @@
+# this is for replication-set and it is maintin the desired state always
 ---
 apiVersion: apps/v1
 kind: ReplicaSet
