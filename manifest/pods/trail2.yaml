@@ -1,0 +1,13 @@
+# Run an alpine contianer with sleep 1d as CMD using arg
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: trail-2
+spec: 
+  containers: 
+    - name: alpineforoneday
+      image: alpine
+      args:
+        - sleep
+        - 1d
