@@ -1,0 +1,23 @@
+#excercise given: create a replicaset with pod spec running alpine container without any args
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: trail2-rs
+  labels:
+    app: excercise1
+spec:
+  minReadySeconds: 5
+  replicas: 3
+  selector: 
+    matchLabels:
+      activity: excercise1
+  template:
+    metadata:
+      name: 
+      labels: 
+        activity: excercise1
+    spec:
+      containers:
+        - image: dyingshortly
+          name: alpine

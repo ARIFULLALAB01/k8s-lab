@@ -3,7 +3,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata: 
-  name: trtrail1-rs
+  name: trail1-rs
   labels:
     name: trail1
 spec:
