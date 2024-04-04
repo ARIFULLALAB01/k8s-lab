@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: SPCProject-rs
+  name: spc-rs
   labels: 
     app: spc
 spec:
@@ -20,7 +20,7 @@ template:
   spec:
     restartPolicy: Always
     containers:
-      - name: SPCImage
+      - name: spcimage
         image: arifullalab01/spcimagedocker:new
         ports:
           - containerPort: 8080
