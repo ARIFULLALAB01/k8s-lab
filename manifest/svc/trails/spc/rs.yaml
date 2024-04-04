@@ -11,18 +11,18 @@ spec:
   selector:
     matchLabels:
       app: spc
-template:
-  metadata:
-    labels:
-      app: spc
-      env: dev
-      version: v1.0 
-  spec:
-    restartPolicy: Always
-    containers:
-      - name: spcimage
-        image: arifullalab01/spcimagedocker:new
-        ports:
-          - containerPort: 8080
+  template:
+    metadata:
+      labels:
+        app: spc
+        env: dev
+        version: v1.0 
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: spcimage
+          image: arifullalab01/spcimagedocker:new
+          ports:
+            - containerPort: 8080
 
 
