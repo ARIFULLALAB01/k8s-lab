@@ -1,7 +1,7 @@
 
 
 Commnads:
----------------
+==================================================
 
 # Basic Commands 
 
@@ -21,17 +21,17 @@ kubectl apply -f trail.yaml
 kubectl delete -f trail.yaml
 kubectl delete po trail1
 
---
+===================================================
 # to login into PODs below commands need to understand
 
 kubectl exec -it trail2 -- pwd
 kubectl exec -it trail2 -- /bin/sh
 
 kubectl exec -it trail3 -- mysql -u nop -p
- ---- 
+ 
+=====================================================
+
 # Labels:
-
-
 kubectl run --image nginx test1
 kubectl run --image nginx test2
 kubectl run --image nginx test3
@@ -57,7 +57,7 @@ kubectl get pods
 kubectl get pods -l app=apache
 kubectl get pods -l app!=apache
 
-===
+================================================================
 ## replicaset
 
 kubectl api-resouces | grep repclicaset
@@ -83,4 +83,6 @@ kubectl delete po test3
 kubectl get po --show-labels
 kubectl delete po test2
 kubectl get po --show-labels
----
+=======================================================
+
+## Deployments

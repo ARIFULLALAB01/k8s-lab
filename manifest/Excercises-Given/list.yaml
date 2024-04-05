@@ -1,0 +1,8 @@
+#Excercise1:
+----------------
+write a deployemnt spec with apche container and alpine pod with "sleep 1d"
+write health check for 
+  * alpine container 
+       * Readiness
+Expose the application on all nodes
+Ensure we have 3 replicas
