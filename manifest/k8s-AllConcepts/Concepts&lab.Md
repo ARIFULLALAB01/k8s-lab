@@ -52,6 +52,8 @@ kubectl label pod test6 -l "app=apache"
 
 kubcetl get po --show-labels
 
+kubectl get pods -l run=test1
+
 kubectl get pods -l app=nginx
 kubectl get pods
 kubectl get pods -l app=apache

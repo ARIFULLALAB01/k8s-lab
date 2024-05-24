@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: bordgame-rs
+  labels: 
+    app: bordgame
+spec:
+  minReadySeconds: 5
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bordgame
+  template:
+    metadata:
+      labels:
+        app: bordgame
+        env: dev
+        version: v1.0 
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: bordgameimage
+          image: arifullalab01/bordgame:new
+          ports:
+            - containerPort: 8080
