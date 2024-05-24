@@ -21,7 +21,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: spcimage
-          image: arifullalab01/spcimagedocker:new
+          image: arifullalab01/spcimage:new
           ports:
             - containerPort: 8080
 
