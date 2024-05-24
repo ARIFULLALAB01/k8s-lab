@@ -9,7 +9,7 @@ spec:
       image: httpd
       ports:
         - containerPort: 80
-          name: bokklao port
+          name: bokklaoport
           protocol: TCP
       resources:
         requests:
