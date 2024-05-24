@@ -9,11 +9,11 @@ spec:
       image: httpd
       ports:
         - containerPort: 80
-          name: bokklao port
+          name: bokklaoport
           protocol: TCP
     - name: httpddummuy
       image: httpd
       ports:
         - containerPort: 80
-          name: bokklao port
+          name: bokklaoport
           protocol: TCP
