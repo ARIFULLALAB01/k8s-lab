@@ -14,6 +14,6 @@ spec:
     - name: httpddummuy
       image: httpd
       ports:
-        - containerPort: 80
+        - containerPort: 81
           name: bokklaoport
           protocol: TCP
