@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: arifullalab01/spcimage:new
+          image: arifullalab01/bordgame:new
           ports:
             - containerPort: 80
           resources:
