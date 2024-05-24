@@ -36,9 +36,9 @@ kubectl run --image nginx test1
 kubectl run --image nginx test2
 kubectl run --image nginx test3
 
-kubectl run --image httpd test1
-kubectl run --image httpd test2
-kubectl run --image httpd test3
+kubectl run --image httpd test4
+kubectl run --image httpd test5
+kubectl run --image httpd test6
 
 kubectl get po
 
